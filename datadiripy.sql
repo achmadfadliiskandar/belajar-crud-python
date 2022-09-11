@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2022 at 12:48 PM
+-- Generation Time: Sep 11, 2022 at 09:10 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `datadiripy`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ketuart`
+--
+
+CREATE TABLE `ketuart` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(225) NOT NULL,
+  `alamat` text NOT NULL,
+  `kodert` int(11) NOT NULL,
+  `tahunjabatan` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -49,6 +63,12 @@ INSERT INTO `warga` (`id`, `nama`, `alamat`, `umur`) VALUES
 --
 
 --
+-- Indexes for table `ketuart`
+--
+ALTER TABLE `ketuart`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `warga`
 --
 ALTER TABLE `warga`
@@ -57,6 +77,12 @@ ALTER TABLE `warga`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `ketuart`
+--
+ALTER TABLE `ketuart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `warga`
